@@ -1,0 +1,299 @@
+>>> 1.0e2
+100.0
+>>> 2*1.0e2
+200.0
+>>> 1.1
+1.1
+>>> 1 + 1.1
+2.1
+>>> true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+>>> True
+True
+>>> True + True
+2
+>>> False
+False
+>>> True / False
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: integer division or modulo by zero
+>>> True * False
+0
+>>> int(2.3)
+2
+>>> float(4)
+4.0
+>>> int('3.4')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '3.4'
+>>> int('3')
+3
+>>> float('.33')
+0.33
+>>> float('.33333')
+0.33333
+>>> float('.333333333')
+0.333333333
+>>> a= 3
+>>> b = 3.0
+>>> type(a)
+<type 'int'>
+>>> type(b)
+<type 'float'>
+>>> type(True)
+<type 'bool'>
+>>> type(False)
+<type 'bool'>
+>>> isinstance(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: isinstance expected 2 arguments, got 1
+>>> a
+3
+>>> isinstance(a,int)
+True
+>>> isinstance(b,int)
+False
+>>> r'c:\eee\eee'
+'c:\\eee\\eee'
+>>> 5 +=1
+  File "<stdin>", line 1
+SyntaxError: can't assign to literal
+>>> 5 += 1
+  File "<stdin>", line 1
+SyntaxError: can't assign to literal
+>>> a =2
+>>> a += 1
+>>> a
+3
+>>> 9/4
+2
+>>> 8%4
+0
+>>> 8%5
+3
+>>> 8//3
+2
+>>> 8/2
+4
+>>> 3.0 / 2 
+1.5
+>>> 3.0 // 2
+1.0
+>>> 3 ** 4
+81
+>>> 8 ** 2
+64
+>>> 5 /2
+2
+>>> 5 / -2
+-3
+>>> 5 /( -2)
+-3
+>>> 2 + 5/-2
+-1
+>>> 2 + 5.0/-2
+-0.5
+>>> 2>2 and 3>4
+False
+>>> 2>1 and 3>4
+False
+>>> 2>1 and 3>1
+True
+>>> not True
+False
+>>> not False
+True
+>>> list = ["111","William"]
+>>> for a in list:
+... print(a,len(a))
+  File "<stdin>", line 2
+    print(a,len(a))
+        ^
+IndentationError: expected an indented block
+>>> for a in list: print(a)
+... ;
+  File "<stdin>", line 2
+    ;
+    ^
+SyntaxError: invalid syntax
+>>> list
+['111', 'William']
+>>> for a in list: 
+...     print(a)
+... ;
+  File "<stdin>", line 3
+    ;
+    ^
+SyntaxError: invalid syntax
+>>> list1 = [1,2,3]
+>>> list1
+[1, 2, 3]
+>>> for b in list1:
+...     print(b)
+... ;
+  File "<stdin>", line 3
+    ;
+    ^
+SyntaxError: invalid syntax
+>>>     print(b)
+  File "<stdin>", line 1
+    print(b)
+    ^
+IndentationError: unexpected indent
+>>> list(range(10))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'list' object is not callable
+>>> list1(range(10))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'list' object is not callable
+>>> list
+['111', 'William']
+>>> list.append("222")
+>>> list
+['111', 'William', '222']
+>>> len(list)
+3
+>>> list.append(['111','444'])
+>>> list
+['111', 'William', '222', ['111', '444']]
+>>> list.insert("www")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: insert() takes exactly 2 arguments (1 given)
+>>> list.insert(0,"www")
+>>> list
+['www', '111', 'William', '222', ['111', '444']]
+>>> list.insert(len(list),"yyy")
+>>> list
+['www', '111', 'William', '222', ['111', '444'], 'yyy']
+>>> list2 = [1,3,2,4]
+>>> list
+['www', '111', 'William', '222', ['111', '444'], 'yyy']
+>>> list2
+[1, 3, 2, 4]
+>>> list2.sort()
+>>> list2
+[1, 2, 3, 4]
+>>> list.sort(reverse=True)
+>>> list2
+[1, 2, 3, 4]
+>>> list2.sort(reverse=True)
+>>> list2
+[4, 3, 2, 1]
+>>> list2(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'list' object is not callable
+>>> list2[1]
+3
+>>> list2
+[4, 3, 2, 1]
+>>> list.remove(4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+>>> list4.remove(4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'list4' is not defined
+>>> list2.remove(4)
+>>> lsit2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'lsit2' is not defined
+>>> list2
+[3, 2, 1]
+>>> list2.insert(0,4)
+>>> list2
+[4, 3, 2, 1]
+>>> list2
+[4, 3, 2, 1]
+>>> del list2[3]
+>>> list
+['yyy', 'www', 'William', '222', '111', ['111', '444']]
+>>> list3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'list3' is not defined
+>>> list2
+[4, 3, 2]
+>>> list2.pop()
+2
+>>> list
+['yyy', 'www', 'William', '222', '111', ['111', '444']]
+>>> list2
+[4, 3]
+>>> lsit2.append(6)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'lsit2' is not defined
+>>> list2.append(6)
+>>> list2.append(7)
+>>> list2.append(8)
+>>> list2.append(9)
+>>> list2
+[4, 3, 6, 7, 8, 9]
+>>> list2[3,5]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list indices must be integers, not tuple
+>>> list2[3:5]
+[7, 8]
+>>> list2
+[4, 3, 6, 7, 8, 9]
+>>> list2[4:5]
+[8]
+>>> list2
+[4, 3, 6, 7, 8, 9]
+>>> 10 in list2
+False
+>>> 3 in list2
+True
+>>> list3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'list3' is not defined
+>>> list3 = [1,2,[3,4]]
+>>> list3
+[1, 2, [3, 4]]
+>>> list[2][1]
+'i'
+>>> list3[2][1]
+4
+>>> list3[2][0]
+3
+>>> list3
+[1, 2, [3, 4]]
+>>> list3.count(3)
+0
+>>> list3[2].count(3)
+1
+>>> list3.index(2);
+1
+>>> list3
+[1, 2, [3, 4]]
+>>> list3.reverse()
+>>> list3
+[[3, 4], 2, 1]
+>>> tuple = (1,2,3,4,5,6)
+>>> tuple[4]
+5
+>>> tuple[:3]
+(1, 2, 3)
+>>> tuple[:]
+(1, 2, 3, 4, 5, 6)
+>>> tuple[3:]
+(4, 5, 6)
+>>> tuple
+(1, 2, 3, 4, 5, 6)
+>>> tuple = tuple[:4] + (88,) + tuple[4:]
+>>> tuple
+(1, 2, 3, 4, 88, 5, 6)
+>>> 
